@@ -1,0 +1,10 @@
+---
+# httpd_host.yml
+- name: 'Provision Image'
+  hosts: default
+  become: true
+  tasks:
+    - name: install Apache
+      package:
+        name: 'apache2'
+        state: present

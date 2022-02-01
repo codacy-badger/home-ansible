@@ -1,0 +1,7 @@
+---
+# file: ubuntu_server.yml
+- name: 'Provision Ubuntu Server'
+  hosts: default
+  become: true
+  roles:
+    - ansible-collection-hardening
